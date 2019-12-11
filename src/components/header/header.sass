@@ -1,0 +1,40 @@
+.header
+    position: fixed
+    top: 0
+    left: 0
+    right: 0
+    height: 100px
+    background-color: rgba(0,0,0,1)
+    box-shadow: 0 5px 15px rgba(255, 255, 255, 0.25)
+    z-index: 100
+    display: flex
+    justify-content: center
+    .container
+        height: 100%
+        width: 100%
+        display: flex
+        justify-content: space-between
+        align-items: center
+        padding: 5px 15px
+        .logo
+            img
+                width: 50px
+        .entry
+            display: flex
+        .login
+            margin-right: 10px
+        .login, .register
+            color: white
+            text-transform: uppercase
+            cursor: pointer
+            &:hover
+                text-decoration: underline
+        nav
+            .item
+                text-transform: uppercase
+                margin: 5px 20px
+                padding: 5px 10px
+                font-size: 18px
+                letter-spacing: 1.8px
+                &.active
+                    text-decoration: underline

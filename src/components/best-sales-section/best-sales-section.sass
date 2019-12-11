@@ -1,0 +1,58 @@
+.best-sales-list
+	display: grid
+	grid-template-columns: repeat(3, 1fr)
+	grid-gap: 40px
+
+	.list-item
+		background-color: #fff
+		padding: 25px 15px
+		display: flex
+		flex-direction: column
+		justify-content: space-between
+		cursor: pointer
+		box-shadow: 0 5px 15px rgba(0, 0, 0, 0.15)
+		transition: .25s all ease
+
+		&:hover
+			box-shadow: 0 5px 15px rgba(0, 0, 0, 0.25)
+
+			.list-model
+				color: #000
+
+			.list-img
+				img
+					transform: scale(1.02)
+
+	.list-img
+		width: 100%
+		display: flex
+		justify-content: center
+		margin-bottom: 10px
+
+		img
+			max-width: 90%
+			height: 350px
+			transition: .25s all ease
+
+	.list-price
+		display: inline-block
+		font-size: 26px
+		color: #000
+		padding-left: 10px
+		text-decoration: line-through
+		&.stock-price
+			float: right
+			padding-right: 10px
+			text-decoration: none
+			color: red
+
+	.list-model
+		font-size: 24px
+		color: #b0b0b0
+		margin-top: 10px
+		margin-bottom: 10px
+		transition: .25s all ease
+
+.catalog-page.wrapper
+	.wrap
+		padding-top: 120px

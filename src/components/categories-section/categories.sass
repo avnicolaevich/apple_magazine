@@ -1,0 +1,38 @@
+.categories-section
+    .categories
+        display: grid
+        grid-template-columns: repeat(3, 1fr)
+        grid-gap: 40px
+        .item
+            display: flex
+            flex-direction: column
+            justify-content: space-between
+            align-items: center
+            cursor: pointer
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.25)
+            transition: .25s all ease
+            padding: 20px
+            background-color: #fff
+            &:hover
+                box-shadow: 0 5px 30px rgba(0, 0, 0, 0.25)
+                .img
+                    transform: scale(1.02)
+                .title
+                    color: black
+            .img
+                width: 260px
+                height: 260px
+                max-width: 100%
+                display: flex
+                justify-content: center
+                align-items: center
+                transition: .25s all ease
+                img
+                    width: 90%
+                    max-height: 90%
+            .title
+                font-size: 24px
+                color: #b0b0b0
+                margin-top: 10px
+                transition: .25s all ease
+

@@ -1,0 +1,39 @@
+.product-cart
+    width: 100%
+    display: flex
+    justify-content: center
+    .container
+        display: grid
+        grid-template-columns: 1fr 1fr
+        width: 100%
+        grid-gap: 40px
+        .img
+            display: flex
+            justify-content: center
+            img
+                width: 100%
+                height: auto
+        .content
+            font-size: 18px
+            .item
+                margin-top: 30px
+                margin-bottom: 30px
+            .model
+                font-size: 50px
+            .price
+                span
+                    font-size: 24px
+                    font-weight: bold
+            .button
+                margin-top: 50px
+            .added
+                background-color: #fff
+                color: green
+                border: 1px solid green
+                cursor: default
+                &:hover
+                    opacity: 1
+                i
+                    margin-left: 10px
+                    font-size: 22px
+                    color: green
